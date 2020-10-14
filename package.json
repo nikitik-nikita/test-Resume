@@ -1,0 +1,11 @@
+{
+  "name": "test_task_resume",
+  "version": "1.0.0",
+  "description": "test task Resume ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikita Nikitik <nikitanikitik1993@gmail.com>",
+  "license": "ISC"
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Резюме</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<div class="container">
+  <form>
+    <div class="wrapper">
+      <section class="general-information">
+        <div class="_text-centre">
+          <h2>Основная информация</h2>
+          <div class="row">
+            <div class="cell wrapper">
+              <div class="text-field">
+                <input class="text-field__text" id="surname" type="text" placeholder=" "
+                       name="surname" required="required">
+                <label class="text-field__label" for="surname">Фамилия</label>
+              </div>
+              <div class="text-field">
+                <input class="text-field__text" id="name" type="text" placeholder=" "
+                       name="name" required="required">
+                <label class="text-field__label" for="name">Имя</label>
+              </div>
+              <div class="text-field">
+                <input class="text-field__text" id="date" type="date" placeholder=" "
+                       name="date" required="required">
+              </div>
+              <div class="text-field">
+                <input class="text-field__text" id="email" type="email" placeholder=" "
+                       name="email" required="required">
+                <label class="text-field__label" for="email">E-mail</label>
+              </div>
+            </div>
+
+            <div class="cell _align-centre">
+              <div class="general-information__image">
+                фото
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="education-information">
+        <div class="_text-centre">
+          <div class="row information__row">
+            <h2>Образование</h2>
+            <div class="cell wrapper">
+              <div class="text-field">
+                <input class="text-field__text" id="educational-institution" type="text" placeholder=" "
+                       name="educational-institution">
+                <label class="text-field__label" for="educational-institution">Учебное заведение</label>
+              </div>
+              <div class="text-field">
+                <input class="text-field__text" id="faculty" type="text" placeholder=" "
+                       name="faculty">
+                <label class="text-field__label" for="faculty">Факультет</label>
+              </div>
+              <div class="text-field">
+                <input class="text-field__text" id="specialty" type="text" placeholder=" "
+                       name="specialty">
+                <label class="text-field__label" for="specialty">Специальность</label>
+              </div>
+              <button class="button">Добавить еще</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-information">
+        <div class="_text-centre">
+          <div class="row information__row">
+            <h2>Опыт работы</h2>
+            <div class="cell wrapper">
+              <div class="text-field">
+                <input class="text-field__text" id="position" type="text" placeholder=" "
+                       name="position">
+                <label class="text-field__label" for="position">Должность</label>
+              </div>
+              <div class="text-field">
+                <input class="text-field__text" id="organization" type="text" placeholder=" "
+                       name="organization">
+                <label class="text-field__label" for="organization">Организация</label>
+              </div>
+              <div class="text-field _margin-top">
+                <textarea class="text-field__text" name="responsibilities" id="responsibilities" rows="4"
+                          placeholder=" "></textarea>
+                <label class="text-field__label" for="responsibilities">Должностные обязанности и достежения</label>
+              </div>
+              <button class="button">Добавить еще</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <button type="submit" class="button _send">Отправить данные</button>
+  </form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+:root {
+  /*colors*/
+  --primory-color: #578853;
+  --base-1-color: #ffffff;
+  --base-2-color: #547c57;
+  --base-3-color: #67968d;
+}
+
+* {
+  margin: 0;
+
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--base-1-color);
+}
+
+h2 {
+  margin-bottom: 1.6rem;
+  color: #212121;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: var(--base-3-color);
+  text-decoration-width: 1px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+input, textarea, button {
+  outline: none;
+}
+
+textarea {
+  line-height: 1.4;
+  resize: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+
+.wrapper {
+  border: 1px solid var(--base-3-color);
+  border-radius: 3px;
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 8rem;
+  background-color: var(--base-2-color);
+  font-size: 1rem;
+  font-weight: 600;
+  height: 2.5rem;
+  color: var(--base-1-color);
+  border: 1px solid var(--base-2-color);
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color .2s linear;
+}
+
+.button:hover {
+  background-color: var(--primory-color);
+}
+
+.text-field {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.text-field__label {
+  position: absolute;
+  top: .6rem;
+  left: .75rem;
+  transform: translateY(0);
+  transition: all 200ms ease-in-out;
+}
+
+.text-field__text {
+  width: 100%;
+  padding: .6rem .75rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.text-field__text:focus + .text-field__label,
+.text-field__text:not(:placeholder-shown) + .text-field__label {
+  top: 0;
+  transform: translateY(-100%);
+}
+
+.general-information__image {
+  width: 50%;
+  height: 100%;
+  border: 1px solid var(--base-2-color);
+  border-radius: 3px;
+}
+
+.information__row {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+._send {
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+._padding-bottom {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+._text-centre {
+  text-align: center;
+}
+
+._margin-top {
+  margin-top: 1.2rem;
+}
+
+._align-centre {
+  align-items: center;
+  justify-content: center;
+}
+
