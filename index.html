@@ -11,89 +11,85 @@
   <form>
     <div class="wrapper">
       <section class="general-information">
-        <div class="_text-centre">
-          <h2>Основная информация</h2>
-          <div class="row">
-            <div class="cell wrapper">
-              <div class="text-field">
-                <input class="text-field__text" id="surname" type="text" placeholder=" "
-                       name="surname" required="required">
-                <label class="text-field__label" for="surname">Фамилия</label>
-              </div>
-              <div class="text-field">
-                <input class="text-field__text" id="name" type="text" placeholder=" "
-                       name="name" required="required">
-                <label class="text-field__label" for="name">Имя</label>
-              </div>
-              <div class="text-field">
-                <input class="text-field__text" id="date" type="date" placeholder=" "
-                       name="date" required="required">
-              </div>
-              <div class="text-field">
-                <input class="text-field__text" id="email" type="email" placeholder=" "
-                       name="email" required="required">
-                <label class="text-field__label" for="email">E-mail</label>
-              </div>
+        <h2>Основная информация</h2>
+        <div class="row">
+          <div class="cell wrapper">
+            <div class="text-field">
+              <input class="text-field__text" id="surname" type="text" placeholder=" "
+                     name="surname" required="required">
+              <label class="text-field__label" for="surname">Фамилия</label>
             </div>
-
-            <div class="cell _align-centre">
-              <div class="general-information__image">
-                фото
-              </div>
+            <div class="text-field">
+              <input class="text-field__text" id="name" type="text" placeholder=" "
+                     name="name" required="required">
+              <label class="text-field__label" for="name">Имя</label>
+            </div>
+            <div class="text-field">
+              <input class="text-field__text" id="date" type="date" placeholder=" "
+                     name="date" required="required">
+            </div>
+            <div class="text-field">
+              <input class="text-field__text" id="email" type="email" placeholder=" "
+                     name="email" required="required">
+              <label class="text-field__label" for="email">E-mail</label>
             </div>
           </div>
-      </section>
-
-      <section class="education-information">
-        <div class="_text-centre">
-          <div class="row information__row">
-            <h2>Образование</h2>
-            <div class="cell wrapper">
-              <div class="text-field">
-                <input class="text-field__text" id="educational-institution" type="text" placeholder=" "
-                       name="educational-institution">
-                <label class="text-field__label" for="educational-institution">Учебное заведение</label>
-              </div>
-              <div class="text-field">
-                <input class="text-field__text" id="faculty" type="text" placeholder=" "
-                       name="faculty">
-                <label class="text-field__label" for="faculty">Факультет</label>
-              </div>
-              <div class="text-field">
-                <input class="text-field__text" id="specialty" type="text" placeholder=" "
-                       name="specialty">
-                <label class="text-field__label" for="specialty">Специальность</label>
-              </div>
-              <button class="button">Добавить еще</button>
+          <div class="cell _align-center _text-center">
+            <div class="general-information__image">
+              <img id="image-resume" src="#" alt="Ваше фото" hidden>
+              <input type="file" id="image-upload" hidden>
+              <input class="button" id='image-upload-button' type='button' value='Загрузить фото'>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="work-information">
-        <div class="_text-centre">
-          <div class="row information__row">
-            <h2>Опыт работы</h2>
-            <div class="cell wrapper">
-              <div class="text-field">
-                <input class="text-field__text" id="position" type="text" placeholder=" "
-                       name="position">
-                <label class="text-field__label" for="position">Должность</label>
-              </div>
-              <div class="text-field">
-                <input class="text-field__text" id="organization" type="text" placeholder=" "
-                       name="organization">
-                <label class="text-field__label" for="organization">Организация</label>
-              </div>
-              <div class="text-field _margin-top">
-                <textarea class="text-field__text" name="responsibilities" id="responsibilities" rows="4"
-                          placeholder=" "></textarea>
-                <label class="text-field__label" for="responsibilities">Должностные обязанности и достежения</label>
-              </div>
-              <button class="button">Добавить еще</button>
+      <section class="education-information _text-center">
+        <div class="row information__row js-education-information">
+          <h2>Образование</h2>
+          <div class="cell wrapper _margin-bottom js-education-information-more">
+            <div class="text-field">
+              <input class="text-field__text" id="educational-institution" type="text" placeholder=" "
+                     name="educational-institution">
+              <label class="text-field__label" for="educational-institution">Учебное заведение</label>
+            </div>
+            <div class="text-field">
+              <input class="text-field__text" id="faculty" type="text" placeholder=" "
+                     name="faculty">
+              <label class="text-field__label" for="faculty">Факультет</label>
+            </div>
+            <div class="text-field">
+              <input class="text-field__text" id="specialty" type="text" placeholder=" "
+                     name="specialty">
+              <label class="text-field__label" for="specialty">Специальность</label>
             </div>
           </div>
         </div>
+        <button class="button js-education-information-add-more">Добавить еще</button>
+      </section>
+
+      <section class="work-information _text-center">
+        <div class="row information__row js-work-information">
+          <h2>Опыт работы</h2>
+          <div class="cell wrapper _margin-bottom js-work-information-more">
+            <div class="text-field">
+              <input class="text-field__text" id="position" type="text" placeholder=" "
+                     name="position">
+              <label class="text-field__label" for="position">Должность</label>
+            </div>
+            <div class="text-field">
+              <input class="text-field__text" id="organization" type="text" placeholder=" "
+                     name="organization">
+              <label class="text-field__label" for="organization">Организация</label>
+            </div>
+            <div class="text-field _margin-top">
+                <textarea class="text-field__text" name="responsibilities" id="responsibilities"
+                          rows="4" placeholder=" "></textarea>
+              <label class="text-field__label" for="responsibilities">Должностные обязанности и достежения</label>
+            </div>
+          </div>
+        </div>
+        <button class="button js-work-information-add-more">Добавить еще</button>
       </section>
     </div>
 
